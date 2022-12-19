@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dischi Json</title>
+</head>
+<body>
+    <div id="app">
+        <h1 class="title">Album</h1>
+        <div class="container">
+
+            <div class="card" v-for="album in albums">
+                <div class="img_box">
+                    <img :src="album.poster" class="img_poster">
+                </div>
+                <h3>{{album.title}}</h3>
+                <div>{{album.author}}</div>
+                <h3>{{album.year}}</h3>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

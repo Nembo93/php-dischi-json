@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.title{
+    text-align: center;
+}
+.container{
+    background-color: rgb(23, 45, 61);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 250px;
+    padding: 10px 20px;
+    background-color: rgb(10, 33, 49);
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.box_img{
+    width: 100%;
+    margin: auto;
+}
+.img_poster{
+    width: 200px;
+    display: block;
+}
